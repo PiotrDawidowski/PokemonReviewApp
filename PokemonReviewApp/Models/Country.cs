@@ -2,7 +2,8 @@
 {
     public class Country
     {
-        public int Id { get; set; }
+        public int CountryId { get; set; }
         public required string CountryName { get; set; }
+        public ICollection<Owner>? Owners { get; set; }
     }
 }
